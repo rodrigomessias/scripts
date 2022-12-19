@@ -1,0 +1,15 @@
+[Unit]
+Description=matrix 7590 undervolt service
+After=suspend.target
+After=hibernate.target
+After=hybrid-sleep.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/undervolt -v --core -140 --cache -140 --analogio -45 --gpu -100 --uncore -110 -p1 40 60 -p2 75 1 -t 80
+
+[Install]
+WantedBy=graphical.target
+WantedBy=suspend.target
+WantedBy=hibernate.target
+WantedBy=hybrid-sleep.target

@@ -1,0 +1,8 @@
+[Unit]
+Description=matrix 7590 cpu max frequency set
+
+[Service]
+ExecStart=echo "3400000" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_max_freq
+
+[Install]
+WantedBy=graphical.target
