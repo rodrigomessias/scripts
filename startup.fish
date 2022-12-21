@@ -1,9 +1,16 @@
+#
+# startup.fish
+#
+# This program is copyright (c) 2022 Rodrigo Messias <dev at rmessias.com>
+# License: GPL v3 or later.  See LICENSE
 # 
-# this is a fish file, should be run using fish ./startup.sh
-# using .sh file extension to have some syntax highlighting
+# startup script that runs on login to set some stuff and open some apps.
+#
+# this is a fish file, should be run using fish ./startup.fish
 #
 # CPU stuff needs root permisions, so its set using systemctl
 # services, check ./services directory for the services files
+#
 
 # -------------------------------
 # call other scripts
@@ -62,3 +69,5 @@ if pgrep copyq >/dev/null
 else
   copyq --start-server &>/dev/null &
 end
+
+exit
