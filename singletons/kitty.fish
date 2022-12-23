@@ -6,7 +6,7 @@
 # 
 # script to open a single instance of kitty
 #
-# this is a fish file, should be run using fish ./startup.fish
+# this is a fish file, should be run using fish ./kitty.fish
 #
 
 if pgrep kitty >/dev/null                                                                                

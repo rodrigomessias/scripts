@@ -6,7 +6,7 @@
 # 
 # script to open a single instance of the thing that plays music
 #
-# this is a fish file, should be run using fish ./startup.fish
+# this is a fish file, should be run using fish ./music.fish
 #
 
 if pgrep -f firefoxdeveloperedition >/dev/null                                                                                

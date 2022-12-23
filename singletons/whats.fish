@@ -1,12 +1,12 @@
 #
-# whatsapp.fish
+# whats.fish
 #
 # This program is copyright (c) 2022 Rodrigo Messias <dev at rmessias.com>
 # License: GPL v3 or later.  See LICENSE
 # 
 # script to open a single instance of whastapp something
 #
-# this is a fish file, should be run using fish ./startup.fish
+# this is a fish file, should be run using fish ./whats.fish
 #
 
 if pgrep -f whatsapp >/dev/null                                                                                
