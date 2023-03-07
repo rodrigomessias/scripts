@@ -1,3 +1,4 @@
+#! /bin/fish
 #
 # dolphin.fish
 #

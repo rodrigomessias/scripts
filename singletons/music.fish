@@ -1,3 +1,4 @@
+#! /bin/fish
 #
 # music.fish
 #
@@ -9,10 +10,15 @@
 # this is a fish file, should be run using fish ./music.fish
 #
 
-if pgrep -f firefoxdeveloperedition >/dev/null                                                                                
+# if pgrep -f firefoxdeveloperedition >/dev/null                                                                                
+#   echo "there is a music thing running"
+# else
+#   /usr/lib/firefox-developer-edition/firefox --class=firefoxdeveloperedition &>/dev/null &
+# end
+if pgrep -f musikcube >/dev/null                                                                                
   echo "there is a music thing running"
 else
-  /usr/lib/firefox-developer-edition/firefox --class=firefoxdeveloperedition &>/dev/null &
+  kitty -e musikcube &>/dev/null &
 end
 
 exit

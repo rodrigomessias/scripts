@@ -1,3 +1,4 @@
+#! /bin/fish
 #
 # addremovesoftware.fish
 #

@@ -1,3 +1,4 @@
+#! /bin/fish
 #
 # kitty.fish
 #

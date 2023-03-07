@@ -1,3 +1,4 @@
+#! /bin/fish
 #
 # whats.fish
 #
