@@ -21,19 +21,6 @@
 # -------------------------------
 # open apps
 # -------------------------------
-# waterfox
-if pgrep waterfox >/dev/null                                                                                
-  echo "waterfox already running"
-else
-  /usr/lib/waterfox/waterfox &>/dev/null &
-end
-
-# firefox
-if pgrep firefox >/dev/null                                                                                
-  echo "firefox is already running"
-else
-  firefox &>/dev/null &
-end
 
 # picom
 if pgrep picom >/dev/null                                                                                
@@ -70,4 +57,24 @@ else
   copyq --start-server &>/dev/null &
 end
 
+# waterfox
+if pgrep waterfox >/dev/null                                                                                
+  echo "waterfox already running"
+else
+  /usr/lib/waterfox/waterfox &>/dev/null &
+end
+
+# firefox
+if pgrep firefox >/dev/null                                                                                
+  echo "firefox is already running"
+else
+  firefox &>/dev/null &
+end
+
+# todoist
+if pgrep todoist >/dev/null                                                                                
+  echo "todoist is already running"
+else
+  todoist &>/dev/null &
+end
 exit
