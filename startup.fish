@@ -22,6 +22,8 @@
 # open apps
 # -------------------------------
 
+sleep 2
+
 # picom
 if pgrep picom >/dev/null                                                                                
   echo "picom is already running"
@@ -77,4 +79,15 @@ if pgrep todoist >/dev/null
 else
   todoist &>/dev/null &
 end
+
+sleep 1
+
+echo key super+f | dotool
+
+echo key super+v | dotool
+
+sleep 2
+
+echo key super+shift+u | dotool
+
 exit
