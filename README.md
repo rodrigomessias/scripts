@@ -21,6 +21,10 @@
 
 bash/fish scripts
 
-### services
+### scripts
+these are my personal configuration scripts for managing my daily PC usage with awesomeWM + KDE
+the scripts assume the repo is located at ~/scripts
 
+### services
 services folder contains .service files for systemctl services
+they must be registered and enabled to work

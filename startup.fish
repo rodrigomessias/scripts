@@ -79,7 +79,7 @@ end
 sleep 0.2
 
 # obsidian
-./singletons/obsidian.fish
+~/scripts/singletons/obsidian.fish
 sleep 0.2
 
 # kalendar
@@ -91,13 +91,15 @@ end
 sleep 0.2
 
 # todoist
-./singletons/todoist.fish
+~/scripts/singletons/todoist.fish
 
 # -------------------------------
 # awesomeWM stuff
 # -------------------------------
 # select tags 1 and 2
+echo key super+d | dotool
 echo key super+f | dotool
+echo key super+x | dotool
 echo key super+v | dotool
 sleep 3
 
