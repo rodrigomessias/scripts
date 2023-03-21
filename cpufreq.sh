@@ -1,7 +1,15 @@
 #!/bin/bash
 #
-# THIS DOES NOT WORK for automation, needs root permisions to change /sys/ files
+# cpufreq.sh
+# -------------------------------
+# this script sets max CPU frequencies
+# nees root access
 #
+# This program is copyright (c) 2023 Rodrigo Messias <dev at rmessias.com>
+# License: GPL v3 or later.  See LICENSE
+#
+
+# THIS DOES NOT WORK for automation, needs root access to change /sys/ files
 echo "3400000" > /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
 echo "3400000" > /sys/devices/system/cpu/cpufreq/policy1/scaling_max_freq
 echo "3400000" > /sys/devices/system/cpu/cpufreq/policy2/scaling_max_freq

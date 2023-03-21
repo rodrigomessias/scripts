@@ -1,15 +1,13 @@
 #! /bin/fish
 #
 # killall.fish
-#
-# This program is copyright (c) 2022 Rodrigo Messias <dev at rmessias.com>
-# License: GPL v3 or later.  See LICENSE
-# 
+# -------------------------------
 # script to close apps gracefully before a shutdown
 #
-# this is a fish file, should be run using fish ./killall.fish
+# This program is copyright (c) 2023 Rodrigo Messias <dev at rmessias.com>
+# License: GPL v3 or later.  See LICENSE
 #
-
+# browsers
 echo "# browsers"
 if pgrep waterfox >/dev/null                                                                                
   wmctrl -c waterfox
@@ -35,6 +33,7 @@ else
 end
 sleep 0.1
 
+# chat
 echo ""
 echo "# chat"
 if pgrep -f whatsapp >/dev/null                                                                                
@@ -53,13 +52,14 @@ else
 end
 sleep 0.1
 
+# organizers
 echo ""
-echo "# data"
+echo "# organizers"
 if pgrep -f obsidian >/dev/null                                                                                
   wmctrl -c Obsidian
-  echo "closing obsidian"
+  echo "closing notepad.md"
 else
-  echo "obsidian not open"
+  echo "notepad.md not open"
 end
 sleep 0.1
 
@@ -71,6 +71,15 @@ else
 end
 sleep 0.1
 
+if pgrep -x kalendar >/dev/null                                                                                
+  wmctrl -c todoist
+  echo "closing kalendar"
+else
+  echo "kalendar not open"
+end
+sleep 0.1
+
+# media
 echo ""
 echo "# media"
 if pgrep mpv >/dev/null                                                                                
@@ -100,6 +109,7 @@ sleep 0.1
 
 sleep 2
 
+# showall
 echo "Windows still open on X11:"
 wmctrl -l
 

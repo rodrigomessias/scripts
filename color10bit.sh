@@ -1,4 +1,13 @@
 #!/bin/sh
+#
+# color10bit.sh
+# -------------------------------
+# this script tests if terminal is in many color mode with
+# a rainbow output
+#
+# This program is copyright (c) 2023 Rodrigo Messias <dev at rmessias.com>
+# License: GPL v3 or later.  See LICENSE
+#
 awk -v term_cols="${width:-$(tput cols || echo 80)}" 'BEGIN{
     s="/\\";
     for (colnum = 0; colnum<term_cols; colnum++) {
