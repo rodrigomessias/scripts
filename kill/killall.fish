@@ -72,7 +72,7 @@ end
 sleep 0.1
 
 if pgrep -x kalendar >/dev/null                                                                                
-  wmctrl -c todoist
+  wmctrl -c kalendar
   echo "closing kalendar"
 else
   echo "kalendar not open"
