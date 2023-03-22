@@ -9,10 +9,10 @@
 # This program is copyright (c) 2023 Rodrigo Messias <dev at rmessias.com>
 # License: GPL v3 or later.  See LICENSE
 #
-if pgrep todoist
+if pgrep -x todoist
   echo "todoist is already running"
 else
-  /usr/bin/todoist &>/dev/null &
+  /usr/bin/todoist %u --no-sandbox %U &>/dev/null &
 end
 
 exit
