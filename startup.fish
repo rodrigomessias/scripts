@@ -105,5 +105,7 @@ sleep 3
 
 # remove urgent status
 echo key super+shift+u | dotool
+# set primary/secondary sections
+echo key super+F7 | dotool
 
 exit
