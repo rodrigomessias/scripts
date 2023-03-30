@@ -32,6 +32,9 @@ else
   picom &>/dev/null &
 end
 
+# todoist
+~/scripts/singletons/todoist.fish
+
 # redshift
 if pgrep redshift-gtk >/dev/null
   echo "redshift is already running"
@@ -90,8 +93,6 @@ else
 end
 sleep 0.2
 
-# todoist
-~/scripts/singletons/todoist.fish
 
 # -------------------------------
 # awesomeWM stuff
@@ -101,7 +102,7 @@ echo key super+d | dotool
 echo key super+f | dotool
 echo key super+x | dotool
 echo key super+v | dotool
-sleep 3
+sleep 5
 
 # remove urgent status
 echo key super+shift+u | dotool
