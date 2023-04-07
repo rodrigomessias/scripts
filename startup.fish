@@ -102,10 +102,11 @@ echo key super+d | dotool
 echo key super+f | dotool
 echo key super+x | dotool
 echo key super+v | dotool
-sleep 5
+sleep 8
 
 # remove urgent status
 echo key super+shift+u | dotool
+
 # set primary/secondary sections
 echo key super+F7 | dotool
 
