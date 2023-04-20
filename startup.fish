@@ -16,11 +16,11 @@
 # set brightness to daytime
 ~/scripts/brightness_up.sh
 
-# set mouse up
-~/scripts/g502.sh
-
 # wait a bit before opening apps
 sleep 1
+
+# set up mouse
+~/scripts/g502.sh
 
 # -------------------------------
 # open apps
