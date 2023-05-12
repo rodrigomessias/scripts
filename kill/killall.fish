@@ -107,10 +107,11 @@ else
 end
 sleep 0.1
 
+echo ""
+echo "✔ done"
 sleep 2
 
 # showall
-echo "Windows still open on X11:"
-wmctrl -l
-
+echo ""
+fish '/home/messi/scripts/kill/showall.fish'
 exit
