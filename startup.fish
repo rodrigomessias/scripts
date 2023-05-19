@@ -102,7 +102,6 @@ echo key super+d | dotool
 echo key super+f | dotool
 echo key super+x | dotool
 echo key super+v | dotool
-echo "key super+F7" | dotool
 sleep 10
 
 # remove urgent status
