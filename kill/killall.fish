@@ -11,25 +11,25 @@
 echo "  browsers"
 if pgrep waterfox >/dev/null                                                                                
   wmctrl -c waterfox
-  echo "   closing waterfox"
+  echo "    closing waterfox"
 else
-  echo "    waterfox not open"
+  echo "     waterfox not open"
 end
 sleep 0.1
 
 if pgrep -f /usr/lib/firefox/firefox >/dev/null                                                                                
   wmctrl -c "Mozilla Firefox"
-  echo "   closing firetube"
+  echo "    closing firetube"
 else
-  echo "    firetube not open"
+  echo "     firetube not open"
 end
 sleep 0.1
 
 if pgrep -f firefoxdeveloperedition >/dev/null                                                                                
   wmctrl -c "Firefox Developer"
-  echo "   closing firefoxdev"
+  echo "    closing firefoxdev"
 else
-  echo "    firefoxdev not open"
+  echo "     firefoxdev not open"
 end
 sleep 0.1
 
@@ -38,17 +38,17 @@ echo ""
 echo "  chat"
 if pgrep -f whatsapp >/dev/null                                                                                
   wmctrl -c WhatsApp
-  echo "   closing whatsapp"
+  echo "    closing whatsapp"
 else
-  echo "    whatsapp not open"
+  echo "     whatsapp not open"
 end
 sleep 0.1
 
 if pgrep -f telegram >/dev/null                                                                                
   wmctrl -c Telegram
-  echo "   closing telegram"
+  echo "    closing telegram"
 else
-  echo "    telegram not open"
+  echo "     telegram not open"
 end
 sleep 0.1
 
@@ -57,25 +57,25 @@ echo ""
 echo "  organizers"
 if pgrep -f obsidian >/dev/null                                                                                
   wmctrl -c Obsidian
-  echo "   closing notepad.md"
+  echo "    closing notepad.md"
 else
-  echo "    notepad.md not open"
+  echo "     notepad.md not open"
 end
 sleep 0.1
 
 if pgrep -f todoist >/dev/null                                                                                
   wmctrl -c todoist
-  echo "   closing todoist"
+  echo "    closing todoist"
 else
-  echo "    todoist not open"
+  echo "     todoist not open"
 end
 sleep 0.1
 
 if pgrep -x kalendar >/dev/null                                                                                
   wmctrl -c kalendar
-  echo "   closing kalendar"
+  echo "    closing kalendar"
 else
-  echo "    kalendar not open"
+  echo "     kalendar not open"
 end
 sleep 0.1
 
@@ -84,37 +84,37 @@ echo ""
 echo "辶 media"
 if pgrep mpv >/dev/null                                                                                
   killall mpv
-  echo "   closing mpv"
+  echo "    closing mpv"
 else
-  echo "    mpv not open"
+  echo "     mpv not open"
 end
 sleep 0.1
 
 if pgrep streamlink >/dev/null                                                                                
   killall streamlink
   wmctrl -c Streamlink
-  echo "   closing streamlink"
+  echo "    closing streamlink"
 else
-  echo "    streamlink not open"
+  echo "     streamlink not open"
 end
 sleep 0.1
 
 if pgrep musikcube >/dev/null                                                                                
   kill musikcube
-  echo "   closing musikcube"
+  echo "    closing musikcube"
 else
-  echo "    musikcube not open"
+  echo "     musikcube not open"
 end
 sleep 0.1
 
 # gamez
 echo ""
-echo " gamez"
+echo "  gamez"
 if pgrep steam >/dev/null                                                                                
   killall steam
-  echo "   closing steam"
+  echo "    closing steam"
 else
-  echo "    steam not open"
+  echo "     steam not open"
 end
 sleep 0.1
 
