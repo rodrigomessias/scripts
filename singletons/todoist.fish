@@ -12,7 +12,7 @@
 if pgrep -x todoist
   echo "todoist is already running"
 else
-  /usr/bin/todoist %u --no-sandbox %U &>/dev/null &
+  todoist-nativefier %u --no-sandbox %U &>/dev/null &
 end
 
 exit

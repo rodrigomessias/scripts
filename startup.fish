@@ -14,7 +14,7 @@
 # call other scripts
 # -------------------------------
 # set brightness to daytime
-~/scripts/brightness_up.sh
+# ~/scripts/brightness_up.sh
 
 # wait a bit before opening apps
 sleep 1
@@ -69,7 +69,7 @@ end
 if pgrep waterfox >/dev/null                                                                                
   echo "waterfox already running"
 else
-  /usr/lib/waterfox/waterfox &>/dev/null &
+  /home/messi/apps/waterfox/waterfox &>/dev/null &
 end
 sleep 0.2
 
@@ -86,28 +86,28 @@ sleep 0.2
 sleep 0.2
 
 # kalendar
-if pgrep -x kalendar >/dev/null                                                                                
-  echo "kalendar is already running"
-else
-  kalendar &>/dev/null &
-end
-sleep 0.2
+# if pgrep -x kalendar >/dev/null                                                                                
+#   echo "kalendar is already running"
+# else
+#   kalendar &>/dev/null &
+# end
+# sleep 0.2
 
 
 # -------------------------------
 # awesomeWM stuff
 # -------------------------------
 # select tags 1 and 2
-echo key super+d | dotool
-echo key super+f | dotool
-echo key super+x | dotool
-echo key super+v | dotool
-sleep 10
-
+# echo key super+d | dotool
+# echo key super+f | dotool
+# echo key super+x | dotool
+# echo key super+v | dotool
+# sleep 10
+#
 # remove urgent status
-echo key super+shift+u | dotool
+# echo key super+shift+u | dotool
 
 # set primary/secondary sections
-echo "key super+F7" | dotool
+# echo "key super+F7" | dotool
 
 exit
