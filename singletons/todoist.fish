@@ -9,7 +9,7 @@
 # This program is copyright (c) 2023 Rodrigo Messias <dev at rmessias.com>
 # License: GPL v3 or later.  See LICENSE
 #
-if pgrep -x todoist
+if pgrep -f /usr/share/todoist-nativefier >/dev/null
   echo "todoist is already running"
 else
   todoist-nativefier %u --no-sandbox %U &>/dev/null &
