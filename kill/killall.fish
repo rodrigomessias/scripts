@@ -35,7 +35,7 @@ sleep 0.1
 
 # chat
 echo ""
-echo "  chat"
+echo "🗨️ chat"
 if pgrep -f whatsapp >/dev/null                                                                                
   wmctrl -c WhatsApp
   echo "    closing whatsapp"
@@ -81,7 +81,7 @@ sleep 0.1
 
 # media
 echo ""
-echo "辶 media"
+echo "  media"
 if pgrep mpv >/dev/null                                                                                
   killall mpv
   echo "    closing mpv"
@@ -121,7 +121,7 @@ sleep 0.1
 
 
 echo ""
-echo " done"
+echo " done"
 sleep 2
 
 # showall
