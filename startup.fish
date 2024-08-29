@@ -20,7 +20,7 @@
 sleep 1
 
 # set up mouse
-~/scripts/g502.sh
+# /home/messi/scripts/g502.sh
 
 # -------------------------------
 # open apps
@@ -33,7 +33,7 @@ else
 end
 
 # todoist
-~/scripts/singletons/todoist.fish
+# fish ~/scripts/singletons/todoist.fish
 
 # redshift
 if pgrep redshift-gtk >/dev/null
@@ -105,7 +105,7 @@ sleep 0.2
 # sleep 10
 #
 # remove urgent status
-# echo key super+shift+u | dotool
+xdotool key ctrl+super+u
 
 # set primary/secondary sections
 # echo "key super+F7" | dotool

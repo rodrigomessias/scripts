@@ -10,7 +10,12 @@
 if pgrep -f musikcube >/dev/null                                                                                
   echo "there is a music thing running"
 else
-  kitty -e musikcube &>/dev/null &
+  awesome-client 'awful=require("awful");
+  awful.spawn("alacritty -e musikcube &>/dev/null", {
+    name = "musikcube",
+    tag = root.tags()[4],
+  })'
+  # alacritty -e musikcube &>/dev/null &
 end
 
 exit
