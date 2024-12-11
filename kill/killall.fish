@@ -72,7 +72,7 @@ end
 sleep 0.1
 
 if pgrep todoist >/dev/null                                                                                
-  wmctrl -c todoist
+  wmctrl -c -x todoist
   echo "    closing todoist"
 # else
 #   echo "     todoist not open"
@@ -129,6 +129,8 @@ sleep 0.1
 
 
 echo ""
+echo "━━━━━━━━━━━━━━━━━━━"
+echo ""
 echo " done"
 sleep 2
 
@@ -136,8 +138,4 @@ sleep 2
 echo ""
 fish '/home/messi/scripts/kill/showall.fish'
 
-sleep 1
-echo "shutting down..."
-sleep 2
-shutdown now
 exit
