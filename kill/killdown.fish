@@ -8,14 +8,20 @@
 # License: GPL v3 or later.  See LICENSE
 #
 # kill all
-fish '/home/messi/scripts/kill/killall.fish'
+if fish '/home/messi/scripts/kill/killall.fish'
+  sleep 1
+  echo "shutting down..."
+  sleep 2
+  shutdown now
+  exit
+else
+  echo ""
+  echo "╔════════════════════════════════════════════════════════════════════╗";
+  echo "║  ░█▀█░█▀█░▀█▀░░░█▀▀░█░█░█░█░▀█▀░▀█▀░▀█▀░█▀█░█▀▀░░░█▀▄░█▀█░█░█░█▀█  ║";
+  echo "║  ░█░█░█░█░░█░░░░▀▀█░█▀█░█░█░░█░░░█░░░█░░█░█░█░█░░░█░█░█░█░█▄█░█░█  ║";
+  echo "║  ░▀░▀░▀▀▀░░▀░░░░▀▀▀░▀░▀░▀▀▀░░▀░░░▀░░▀▀▀░▀░▀░▀▀▀░░░▀▀░░▀▀▀░▀░▀░▀░▀  ║";
+  echo "╚════════════════════════════════════════════════════════════════════╝";
+  exit 1
+end
 
-# showall
-echo ""
-fish '/home/messi/scripts/kill/showall.fish'
 
-sleep 1
-echo "shutting down..."
-sleep 2
-shutdown now
-exit

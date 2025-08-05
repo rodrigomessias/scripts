@@ -7,6 +7,31 @@
 # This program is copyright (c) 2023 Rodrigo Messias <dev at rmessias.com>
 # License: GPL v3 or later.  See LICENSE
 #
+
+# break if wezterm open
+if pgrep nvim >/dev/null
+  echo "╔╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╤╗"
+  echo "╟┼┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┴┼╢"
+  echo "╟┤                                                                 ├╢"
+  echo "╟┤                _             _                                  ├╢"
+  echo "╟┤               (_)           (_)                                 ├╢"
+  echo "╟┤     _ ____   ___ _ __ ___    _ ___    ___  _ __   ___ _ __      ├╢"
+  echo "╟┤    | '_ \ \ / / | '_ ` _ \  | / __|  / _ \| '_ \ / _ \ '_ \     ├╢"
+  echo "╟┤    | | | \ V /| | | | | | | | \__ \ | (_) | |_) |  __/ | | |    ├╢"
+  echo "╟┤    |_| |_|\_/ |_|_| |_| |_| |_|___/  \___/| .__/ \___|_| |_|    ├╢"
+  echo "╟┤                                           | |                   ├╢"
+  echo "╟┤                                           |_|                   ├╢"
+  echo "╟┤                                                                 ├╢"
+  echo "╟┼┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┬┼╢"
+  echo "╚╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╧╝"
+  exit 1
+end
+
+
+
+
+
+
 # browsers
 echo "  browsers"
 if pgrep waterfox >/dev/null                                                                                
@@ -28,6 +53,22 @@ sleep 0.1
 if pgrep -f firefoxdeveloperedition >/dev/null                                                                                
   wmctrl -c "Firefox Developer"
   echo "    closing firefoxdev"
+# else
+#   echo "     firefoxdev not open"
+end
+sleep 0.1
+
+if pgrep -f zen-browser
+  wmctrl -c "Zen Browser"
+  echo "    closing zen browser"
+# else
+#   echo "     firefoxdev not open"
+end
+sleep 0.1
+
+if pgrep thorium >/dev/null                                                                                
+  wmctrl -c "Thorium"
+  echo "    closing thorium"
 # else
 #   echo "     firefoxdev not open"
 end
@@ -72,7 +113,8 @@ end
 sleep 0.1
 
 if pgrep todoist >/dev/null                                                                                
-  wmctrl -c -x todoist
+  killall todoist
+  # wmctrl -c -x todoist
   echo "    closing todoist"
 # else
 #   echo "     todoist not open"
@@ -125,7 +167,6 @@ if pgrep steam >/dev/null
 #   echo "     steam not open"
 end
 sleep 0.1
-
 
 
 echo ""

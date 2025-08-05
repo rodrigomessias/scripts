@@ -58,18 +58,19 @@ else
 end
 sleep 0.2
 
-# copyq
-if pgrep copyq >/dev/null                                                                                
-  echo "copyq is already running"
-else
-  copyq --start-server &>/dev/null &
-end
-
 # waterfox
 if pgrep waterfox >/dev/null                                                                                
   echo "waterfox already running"
 else
   /home/messi/apps/waterfox/waterfox &>/dev/null &
+end
+sleep 0.2
+
+# copyq
+if pgrep copyq >/dev/null                                                                                
+  echo "copyq is already running"
+else
+  copyq --start-server &>/dev/null &
 end
 sleep 0.2
 
@@ -79,7 +80,7 @@ if pgrep firefox >/dev/null
 else
   firefox &>/dev/null &
 end
-sleep 0.2
+sleep 1
 
 # obsidian
 ~/scripts/singletons/obsidian.fish
